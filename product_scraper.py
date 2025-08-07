@@ -137,12 +137,12 @@ async def fetch_product_details(session, product_id, category_name):
                 "Quality And Format": qualityAndFormat,
                 "Prep And Cooking Instructions": prepAndCookingInstructions,
                 "Storage And Usage": storageAndUsage,
-                "handling Instructions": handlingInstructions,
+                "Handling Instructions": handlingInstructions,
                 "Additional Information": additionalInformation,
                 "Culinary Applications": culinaryApplications,
                 "GTIN": gtin,
                 "Manufacturer UPC": manufacturerUPC,
-                "Net Weight": netWeight
+                "Net Weight per Case": netWeight
 
             }
 
@@ -227,7 +227,7 @@ def scrape_all_products():
         "SKU (Product ID)", "Picture URL", "Description", "Category",
         "Packaging Information", "Size And Shape", "Yield Or Serving Size",
         "Quality And Format", "Prep And Cooking Instructions",
-        "Storage And Usage", "Additional Information", "Culinary Applications",
+        "Storage And Usage", "Handling Instructions", "Additional Information", "Culinary Applications",
         "GTIN", "Manufacturer UPC", "Net Weight per Case"
     ]
     with open("allproducts.csv", mode="w", newline="", encoding="utf-8-sig") as f:
